@@ -1,0 +1,30 @@
+.bar__icons{
+	position: relative;
+	display: block;
+	padding: 0.3rem 0.3rem;
+	position: fixed;
+	backdrop-filter: saturate(180%) blur(20px);
+	background-color: #48acf329;
+	display: flex;
+	gap:0.8rem;
+	border-radius: 3rem;
+	z-index: 2;
+	bottom: 1rem;
+
+	a{
+		color: var(--primary-color);
+		background: transparent;
+		padding: 0.8rem 1rem;
+		border-radius: 50%;
+		font-size: 1rem;
+
+			&:hover{
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+	}
+	a.active__btn{
+					background: #48acf340;
+					color: var(--white-color-light);
+				}
+
+}

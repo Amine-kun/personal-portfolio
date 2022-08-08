@@ -1,0 +1,45 @@
+.shape1{
+	background-image: linear-gradient(var(--primary-color), transparent);
+	width: 500px;
+	height: 500px;
+	border-radius: 400px 400px 400px 400px;
+	display: flex;
+	justify-content:center;
+	align-items:flex-end;
+
+	position: relative;
+
+	@media screen and (max-width: 2000px) {
+    width: 300px;
+	height: 300px;  
+	border-radius: 200px 200px 200px 200px;  
+  }
+}
+
+.bluryShape{
+	height: 350px;
+	width: 650px;
+	background-color: white;
+	position: absolute;
+	backdrop-filter: saturate(180%) blur(20px);
+	background-color: #48acf340;
+	border-radius: 40px;
+	bottom: 50px;
+	padding: 45px 30px;
+	display: flex;
+	flex-direction:column;
+	gap:4px;
+	font-size: 1.6rem;
+
+	@media screen and (max-width: 2000px){
+		height: 200px;
+		width: 350px;
+		border-radius: 20px;
+		padding: 20px 15px;
+		gap:2px;
+		font-size: 1rem
+
+	}
+
+
+}

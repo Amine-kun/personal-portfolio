@@ -1,0 +1,52 @@
+#projects{
+	width: 100vw;
+	justify-content:flex-start;
+	padding: 6rem;
+	flex-direction: column;
+	gap:50px;
+}
+.portfolio__section{
+	flex-direction:column;
+}
+
+.app__work-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .app__work-filter-item {
+    padding: 0.6rem 1rem;
+    border-radius: 0.3rem;
+    border: 2px solid var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--white-color-light);
+    }
+
+    @media screen and (min-width: 2000px) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  .item-active {
+    background-color: var(--primary-color);
+    color: var(--white-color-light);
+  }
+}
+
+
+.app__work-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
