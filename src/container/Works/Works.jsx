@@ -18,7 +18,6 @@ const Works = ({isDarkMode}) => {
 			    const query = '*[_type == "works"]';
 
 			    client.fetch(query).then((data) => {
-			    	console.log('data', data);
 			      setWorks(data);
 			      setFilterWork(data);
 			    });
@@ -42,7 +41,7 @@ const Works = ({isDarkMode}) => {
 	return (
 		<div id="projects" className="app__flex">
 			<div className="head-title">
-				<p>What i have accomplished</p>
+				<p className="lg-text">What i have accomplished</p>
 				<p className="head-text">My projects</p>
 			</div>
 
@@ -68,7 +67,7 @@ const Works = ({isDarkMode}) => {
 					        className="app__work-portfolio"
 					      >
 					        {filterWork.map((work, index) => (
-					          	<Card work={work} isDarkMode={isDarkMode} index={index} />
+					          	<Card key={index} work={work} isDarkMode={isDarkMode} index={index} />
 					        ))}
 					      </motion.div>
 				   </motion.div>

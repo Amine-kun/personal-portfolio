@@ -16,7 +16,7 @@ const Skills = ({isDarkMode}) => {
 				whileInView={{y:[100, 0], opacity:[0,1]}}
 				transition={{duration:0.5}}
 				className="head-title">
-				<p>What i can work with</p>
+				<p className="lg-text">What i can work with</p>
 				<h1 className="head-text">My experiences</h1>
 			</motion.div>
 			<motion.div
@@ -37,21 +37,21 @@ const Skills = ({isDarkMode}) => {
 				<div className="stack">
 					<p className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>front end</p>	
 						<div className="techs">
-							{frontEnd.map((tech)=> <p>- {tech}</p>)}
+							{frontEnd.map((tech)=> <p key={tech}>- {tech}</p>)}
 						</div>
 				</div>
 				
 				<div className="stack">
 					<p className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>back end && Databases</p>
 						<div className="techs">
-							{backEnd.map((tech)=> <p>- {tech}</p>)}
+							{backEnd.map((tech)=> <p key={tech}>- {tech}</p>)}
 						</div>
 				</div>
 
 				<div className="stack">
 					<p className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>graphic design</p>
 						<div className="techs">
-							{design.map((tech)=> <p>- {tech}</p>)}
+							{design.map((tech)=> <p key={tech}>- {tech}</p>)}
 						</div>
 				</div>
 

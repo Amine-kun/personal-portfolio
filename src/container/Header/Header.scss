@@ -19,6 +19,11 @@
   font-weight: bold;
   color: var(--white-color-light);
   cursor: pointer;
+
+  @media screen and (min-width: 2000px) {
+                padding:1rem 2rem;
+                font-size: 20px;
+            }
 }
 .profileImg{
   width: auto;

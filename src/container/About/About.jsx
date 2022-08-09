@@ -10,7 +10,7 @@ const About = () => {
 				whileInView={{y:[100, 0], opacity:[0,1]}}
 				transition={{duration:0.5}}
 				className="head-title">
-				<p>Get to know</p>
+				<p className="lg-text">Get to know</p>
 				<h1 className="head-text">About Me</h1>
 			</motion.div>
 

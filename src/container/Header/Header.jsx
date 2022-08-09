@@ -12,9 +12,9 @@ const Header = () => {
 				whileInView={{x:[-100, 0], opacity:[0,1]}}
 				transition={{duration:0.5}}
 				className="app__flex-wrap header-text">
-					<p>Hello, I'm</p>
+					<p className="lg-text">Hello, I'm</p>
 					<h1 className="head-text">AMINE BERROUKHAM</h1>
-					<p>Fullstack Developer  and  Web Designer</p>
+					<p className="lg-text">Fullstack Developer  and  Web Designer</p>
 					<button className="btn">Download_Resume</button>
 			</motion.div>
 			<motion.div
