@@ -117,3 +117,20 @@
 .bold{
   font-weight: bold;
 }
+
+.app__work-more{
+  height: 35px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 0.3rem;
+  font-size:0.8rem;
+
+    .arrow-icon{
+      font-size: 1.6rem ;
+      margin: 2px 0 0 -25px;
+      transition:300ms;
+    }
+    .arrow-icon-left{
+      margin: 2px 0 0 -15px;
+    }
+}

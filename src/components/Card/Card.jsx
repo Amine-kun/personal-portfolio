@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Card.scss';
 
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import {BsArrowRightShort} from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import {urlFor} from '../../client';
+import {useNavigate} from	'react-router-dom';
 
 
 const Card = ({work, isDarkMode, index}) => {
+
+	const navigate = useNavigate();
+	const [isHovered, setIsHovered] = useState(false);
+
 	return (
 				<div className="app__work-item app__flex" key={index}>
 				            <div
@@ -56,6 +62,9 @@ const Card = ({work, isDarkMode, index}) => {
 				              <div className={`app__work-tag app__flex ${!isDarkMode && 'app__work-tag-light'}`}>
 				                <p className="p-text bold">{work.tags[0]}</p>
 				              </div>
+				            </div>
+				            <div className="app__flex app__work-more" onClick={()=>navigate(`/Project/${work.title}`)}onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+				            	<p>Study case</p><BsArrowRightShort className={`arrow-icon ${isHovered && 'arrow-icon-left'}`}/>
 				            </div>
 				          </div>
 	)

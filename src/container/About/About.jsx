@@ -37,7 +37,7 @@ const About = () => {
 						<span className="card">Link</span>
 					</div>
 
-					<p>	
+					<p className="p-text">	
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -45,9 +45,7 @@ const About = () => {
 					</p>
 
 					<div className="links">
-						<button className="btn">Link</button>
-						<button className="btn">Link</button>
-						<button className="btn">Link</button>
+						<button className="btn">More about me!</button>
 					</div>
 				</motion.div>
 			</div>

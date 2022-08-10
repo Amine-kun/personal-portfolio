@@ -1,7 +1,9 @@
 import react,{useState} from 'react';
 import './App.scss';
 import './assets/shapes.scss';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
+import ProjectDetails from './container/ProjectDetails/ProjectDetails';
 import About from './container/About/About';
 import Footer from './container/Footer/Footer';
 import Works from './container/Works/Works';
@@ -17,14 +19,22 @@ function App() {
 
   return (
     <div className={isDarkMode ? "app" : "app__lightmode"}>
-        <FloatingHeader/>
         <MainHeader isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-        <Header/>
-        <About/>
-        <Skills isDarkMode={isDarkMode}/>
-        <Works isDarkMode={isDarkMode}/>
-        <Contact isDarkMode={isDarkMode}/>
-        <Footer/>
+        <Routes>
+            <Route path="/" element={<>
+                                        <FloatingHeader/>
+                                        <Header/>
+                                        <About/>
+                                        <Skills isDarkMode={isDarkMode}/>
+                                        <Works isDarkMode={isDarkMode}/>
+                                        <Contact isDarkMode={isDarkMode}/>
+                                        <Footer/>
+                                    </>
+                                }/>
+
+            <Route path="/Project/:id" element={<ProjectDetails/>}/>
+        </Routes>
+
     </div>
   );
 }
