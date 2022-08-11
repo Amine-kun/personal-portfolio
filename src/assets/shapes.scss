@@ -43,3 +43,15 @@
 
 
 }
+
+.bar{
+	height: 300px;
+	width: 2px;
+	border-radius: 5px;
+	background-color: var(--primary-color);
+
+	@media screen and (max-width: 800px){
+		display: none;
+	}
+
+}
