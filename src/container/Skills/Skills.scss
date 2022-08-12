@@ -8,9 +8,11 @@
 	gap:60px;
 }
 
+.frontend { grid-area:frontend;}
+.backend { grid-area:backend;}
+.design { grid-area:design;}
+
 .exp__icons{
-	// height: 100%;
-	// width: 100%;
 	display: flex;
 	font-size: 6rem ;
 	padding: 2% 0 0 0;
@@ -20,8 +22,6 @@
 				padding: 20px;
 			   	border-radius: 100px;
 			   	z-index: 1;
-			   	// height: auto;
-			   	// width: 200px;
 
 				   	@media screen and (max-width: 800px){
 						padding: 10px;
@@ -35,50 +35,77 @@
 
 			@media screen and (min-width: 2000px){
 				font-size: 8rem;
-				padding: 5% 0 0 0;
+				padding: 3% 0 0 0;
 			}
 
 }
 
 .stacks{
-	display: flex;
-	flex:1;
-	justify-content:center;
-	align-items:center;
-	flex-wrap:wrap;
-	flex-direction:row;
-	gap:20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+				'frontend backend'
+				'design design'
+				;
+	gap:2rem;
 
-		.stack{
-			flex-direction:column;
-			display: flex;
-			align-items:center;
-			gap:0.8rem;
-			height: 200px;
-			width: 250px;
-			background-color: #48acf363;
-			border-radius: 20px;
+		@media screen and (max-width: 800px){
+				grid-template-columns: 1fr;
+				grid-template-areas:
+				'frontend'
+				'backend'
+				'design'
+				;
+		}
+}
+
+.skills__stack{
+		background-color: #48acf363;
+		padding: 2rem 4rem;
+		border-radius: 2rem;
+		border: 1px solid #48acf363;
+		transition:200ms;
+
+		&:hover{
+			background: transparent;
+			cursor: default;
+		}
 
 				.head-stack{
-					color:var(--black-color);
 					font-weight: bold;
 					text-transform: uppercase;
-					background-color: var(--white-color-light);
-					border-radius: 5px 5px 10px 10px;
-					padding: 15px 0;
-					width: 100%;
+					padding-bottom: 2rem;
 				}
-				.techs{
-					display: flex;
-					justify-content:center;
-					flex-direction:column;
-					gap:0;
-				}
-				.light-text{
-				  color: var(--white-color-light);
-				}
-				.light-bg{
-				  background-color: var(--primary-color);
-				}
+
+		.skills__content{
+				display:grid;
+				grid-template-columns:1fr 1fr;
+				row-gap:2rem;
+				gap:1rem;
+
+					.skills__details{
+						display: flex;
+						gap:1rem;
+
+					}
+
+			@media screen and (max-width: 1024px){
+				padding: 1rem;
+			}
+			@media screen and (max-width: 800px){
+				padding: 1rem;
+			}
+			@media screen and (min-width: 2000px){
+				padding: 2rem;
+				row-gap:3rem;
+				gap:2rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1024px){
+			width: 100%;
+			padding: 2rem;
+			margin:0 auto;
 		}
 }

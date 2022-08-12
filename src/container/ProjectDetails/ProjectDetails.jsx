@@ -58,32 +58,34 @@ const ProjectDetails = () => {
 				</div>
 			</div>
 			<div className="more__section app__flex">
-
 				<h2>More Projects:</h2>
+				<div className="app__flex cards">
 
-				<div className="related app__flex">
-					<img src={testimg} alt="related-post" className="related-post"/>
-					<h3>This is a title</h3>
-						<div className="tags app__flex">
-							<span className="Atag">tag1</span>
-							<span className="Atag">tag1</span>
-						</div>
-				</div>
-				<div className="related app__flex">
-					<img src={testimg} alt="related-post" className="related-post"/>
-					<h3>This is a title</h3>
-						<div className="tags app__flex">
-							<span className="Atag">tag1</span>
-							<span className="Atag">tag1</span>
-						</div>
-				</div>
-				<div className="related app__flex">
-					<img src={testimg} alt="related-post" className="related-post"/>
-					<h3>This is a title</h3>
-						<div className="tags app__flex">
-							<span className="Atag">tag1</span>
-							<span className="Atag">tag1</span>
-						</div>
+					<div className="related app__flex">
+						<img src={testimg} alt="related-post" className="related-post"/>
+						<h3>This is a title</h3>
+							<div className="tags app__flex">
+								<span className="Atag">tag1</span>
+								<span className="Atag">tag1</span>
+							</div>
+					</div>
+					<div className="related app__flex">
+						<img src={testimg} alt="related-post" className="related-post"/>
+						<h3>This is a title</h3>
+							<div className="tags app__flex">
+								<span className="Atag">tag1</span>
+								<span className="Atag">tag1</span>
+							</div>
+					</div>
+					<div className="related app__flex">
+						<img src={testimg} alt="related-post" className="related-post"/>
+						<h3>This is a title</h3>
+							<div className="tags app__flex">
+								<span className="Atag">tag1</span>
+								<span className="Atag">tag1</span>
+							</div>
+					</div>
+
 				</div>
 				<span className="bar">
 				</span>

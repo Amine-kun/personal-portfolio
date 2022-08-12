@@ -15,7 +15,7 @@ import FloatingHeader from './components/FloatingHeader/FloatingHeader';
 
 function App() {
 
-    const [isDarkMode, setIsDarkMode] = useState(true);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
     <div className={isDarkMode ? "app" : "app__lightmode"}>

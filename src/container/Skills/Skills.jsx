@@ -4,6 +4,7 @@ import './Skills.scss';
 import {motion} from 'framer-motion';
 import {FaReact, FaNodeJs} from 'react-icons/fa';
 import {DiJavascript1, DiHtml5, DiMongodb} from 'react-icons/di';
+import {BsPatchCheckFill} from 'react-icons/bs';
 
 const frontEnd=["ReactJS","HTML5","CSS3","SCSS","Bootstrap","TailwindCSS"];
 const backEnd=["NodeJS","PostgreSQL","MongoDB","Firebase"];
@@ -33,28 +34,49 @@ const Skills = ({isDarkMode}) => {
 				whileInView={{y:[100, 0], opacity:[0,1]}}
 				transition={{duration:1, delayChildren:2}}
 				className="stacks">
-				
-				<div className="stack">
-					<p className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>front end</p>	
-						<div className="techs">
-							{frontEnd.map((tech)=> <p key={tech}>- {tech}</p>)}
-						</div>
-				</div>
-				
-				<div className="stack">
-					<p className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>back end && Databases</p>
-						<div className="techs">
-							{backEnd.map((tech)=> <p key={tech}>- {tech}</p>)}
-						</div>
-				</div>
 
-				<div className="stack">
-					<p className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>graphic design</p>
-						<div className="techs">
-							{design.map((tech)=> <p key={tech}>- {tech}</p>)}
-						</div>
+				<div className="skills__stack frontend">
+					<h3 className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>Front end</h3>	
+					<div className="skills__content">
+						{frontEnd.map((tech)=>
+							<article className="skills__details" key={tech}>
+								<BsPatchCheckFill/>
+									<div>
+										<h4>{tech}</h4>
+										<small>intermediate</small>
+									</div>
+							</article>
+							)}
+					</div>
 				</div>
-
+				<div className="skills__stack backend">
+					<h3 className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>Back end </h3>	
+					<div className="skills__content">
+						{backEnd.map((tech)=>
+							<article className="skills__details" key={tech}>
+								<BsPatchCheckFill/>
+									<div>
+										<h4>{tech}</h4>
+										<small>intermediate</small>
+									</div>
+							</article>
+							)}
+					</div>
+				</div>
+				<div className="skills__stack design">
+					<h3 className={isDarkMode ? "head-stack app__flex" : "head-stack app__flex light-text light-bg"}>Graphic Design</h3>	
+					<div className="skills__content">
+						{design.map((tech)=>
+							<article className="skills__details" key={tech}>
+								<BsPatchCheckFill/>
+									<div>
+										<h4>{tech}</h4>
+										<small>intermediate</small>
+									</div>
+							</article>
+							)}
+					</div>
+				</div>
 			</motion.div>
 		</div>
 	)
