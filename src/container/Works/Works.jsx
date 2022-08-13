@@ -18,6 +18,7 @@ const Works = ({isDarkMode}) => {
 			    const query = '*[_type == "works"]';
 
 			    client.fetch(query).then((data) => {
+			    	console.log(data);
 			      setWorks(data);
 			      setFilterWork(data);
 			    });

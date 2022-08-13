@@ -28,13 +28,12 @@ function App() {
                                         <Skills isDarkMode={isDarkMode}/>
                                         <Works isDarkMode={isDarkMode}/>
                                         <Contact isDarkMode={isDarkMode}/>
-                                        <Footer/>
                                     </>
                                 }/>
 
             <Route path="/Project/:id" element={<ProjectDetails/>}/>
         </Routes>
-
+        <Footer/>
     </div>
   );
 }

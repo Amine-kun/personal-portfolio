@@ -1,0 +1,12 @@
+#footer{
+	width: 100vw;
+	padding: 2rem 4rem 6rem 4rem;
+	background-color: var(--primary-color);
+	flex-direction:column;
+	gap:15px;
+}
+
+.footer__icons{
+	font-size: 1.5rem;
+	margin: 0.8rem;
+}

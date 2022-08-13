@@ -32,9 +32,9 @@ const About = () => {
 				className="aboutme-info__section">
 
 					<div className="cards">
-						<span className="card">Link</span>
-						<span className="card">Link</span>
-						<span className="card">Link</span>
+						<span className="card">Eager to Learn</span>
+						<span className="card">Flexible</span>
+						<span className="card">Good At Googling</span>
 					</div>
 
 					<p className="p-text">	

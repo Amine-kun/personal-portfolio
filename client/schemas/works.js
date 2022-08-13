@@ -8,10 +8,14 @@ export default {
         title: 'Title',
         type: 'string',
       },
-    
       {
         name: 'description',
         title: 'Description',
+        type: 'string',
+      },
+      {
+        name: 'details',
+        title: 'Details',
         type: 'string',
       },
       {
@@ -32,7 +36,19 @@ export default {
           hotspot: true,
         },
       },
-   
+      {
+        name: 'studyCaseImg',
+        title: 'StudyCaseImg',
+        type: 'image',
+        options: {
+          hotspot: true,
+        },
+      },
+      {
+        name: 'date',
+        title: 'Date',
+        type: 'string',
+      },
       {
         name: 'tags',
         title: 'Tags',

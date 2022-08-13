@@ -64,7 +64,7 @@ const Card = ({work, isDarkMode, index}) => {
 				              </div>
 				            </div>
 				            <div className="app__flex app__work-more" onClick={()=>navigate(`/Project/${work.title}`)}onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
-				            	<p>Study case</p><BsArrowRightShort className={`arrow-icon ${isHovered && 'arrow-icon-left'}`}/>
+				            	<p>Read more</p><BsArrowRightShort className={`arrow-icon ${isHovered && 'arrow-icon-left'}`}/>
 				            </div>
 				          </div>
 	)
