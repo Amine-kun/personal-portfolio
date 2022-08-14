@@ -2,8 +2,7 @@ import React from 'react';
 import './Header.scss';
 import {motion} from 'framer-motion';
 
-import {AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
-import {FaGithubSquare} from 'react-icons/fa';
+import {FiGithub, FiLinkedin, FiInstagram} from 'react-icons/fi';
 
 const Header = () => {
 	return (
@@ -43,9 +42,9 @@ const Header = () => {
 					whileInView={{y:[100, 0], opacity:[0,1]}}
 					transition={{duration:0.5}}
 					className="header__socials">
-				<FaGithubSquare className="app__pointer"/>
-				<AiFillLinkedin className="app__pointer"/>
-				<AiFillInstagram className="app__pointer"/>
+				<FiGithub className="app__pointer social__icons"/>
+				<FiLinkedin className="app__pointer social__icons"/>
+				<FiInstagram className="app__pointer social__icons"/>
 			</motion.div>
 			<motion.div 
 					whileInView={{y:[100, 0], opacity:[0,1]}}

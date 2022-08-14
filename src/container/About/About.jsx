@@ -32,19 +32,19 @@ const About = () => {
 				className="aboutme-info__section">
 
 					<div className="cards">
-						<span className="card">Eager to Learn</span>
-						<span className="card">Flexible</span>
-						<span className="card">Good At Googling</span>
+						<span className="card app__flex">Eager to Learn</span>
+						<span className="card app__flex">Flexible</span>
+						<span className="card app__flex">Good At Googling</span>
 					</div>
 
-					<p className="p-text">	
+					<p className="p-text about-text">	
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 						consequat.
 					</p>
 
-					<div className="links">
+					<div className="links  about-text">
 						<button className="btn">More about me!</button>
 					</div>
 				</motion.div>

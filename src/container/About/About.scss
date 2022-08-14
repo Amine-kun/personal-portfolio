@@ -66,9 +66,17 @@
 				border-radius: 0.7rem;
 			}
 		}
+		.about-text{
+			@media screen and (max-width: 800px){
+				padding: 0 25px;
+			}
+		}
 	}
 
 	@media screen and (max-width: 800px) {
     	grid-template-columns: 100%;
+  }
+  @media screen and (min-width: 1380px) {
+    	width: 80%;
   }
 }
