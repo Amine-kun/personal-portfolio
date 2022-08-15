@@ -11,6 +11,10 @@
 	}
 }
 
+.light-input{
+		color: var(--lighGray-color);
+	}	
+
 .contact__container-form{
 	display: flex;
 	flex-direction: row;
@@ -31,7 +35,7 @@
 				.contact__option{
 					width: 80%;
 					height: 100px;
-					background-color: var(--primary-color);
+  					 background-color: #48acf329;
 					border-radius: 0.3rem;
 					cursor: pointer;
 					flex-direction:column;
@@ -41,9 +45,17 @@
 						.icon{
 							font-size: 25px;
 						}
-					&:hover{
-						box-shadow: 0 0 25px #48acf329;
-					}
+						 .arrow{
+						      font-size: 1.6rem ;
+						      margin: 0 0 -9px 0;
+						      transition:300ms;
+						    }
+						    .arrow-left{
+						      margin: 0 -15px -9px 0;
+						    }
+						&:hover{
+							box-shadow: 0 0 25px #48acf329;
+						}
 
 					@media screen and (min-width: 2000px) {
 				      	height: 150px;
@@ -87,9 +99,6 @@
 				      	font-size: 20px;
 				    }
 				}
-				.light-input{
-					color: var(--black-color);
-				}
 				.textarea{
 					height: 100px;
 					padding-top: 10px;
@@ -112,4 +121,5 @@
 	height: 100%;
 	justify-content:center;
 	align-items:center;
+
 }

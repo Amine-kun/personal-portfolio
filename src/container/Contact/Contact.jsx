@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './Contact.scss';
 
-import {BsFillTelephoneFill} from 'react-icons/bs';
+import {AiOutlineWhatsApp} from 'react-icons/ai';
 import {HiOutlineMail} from 'react-icons/hi';
+import {BsArrowRightShort} from 'react-icons/bs';
 import { client } from '../../client';
 import {motion} from 'framer-motion';
 
@@ -12,6 +13,8 @@ const Contact = ({isDarkMode}) => {
  	  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 	  const [loading, setLoading] = useState(false);
 	  const [warning, setWarning] = useState(false);
+	  const [isHovered, setIsHovered] = useState('null');
+
 
 
 	  const handleChangeInput = (e) => {
@@ -66,14 +69,26 @@ const Contact = ({isDarkMode}) => {
 							whileInView={{x:[-100, 0], opacity:[0,1]}}
 							transition={{duration:0.5}}
 							className="contact__options">
-							<div className="contact__option app__flex">
+							<a  href="mailto:Aminehlab@gmail.com"
+							   className={` decoration-none contact__option app__flex ${!isDarkMode && 'light-input'}`} 
+							   onMouseEnter={()=>setIsHovered('first')} 
+							   onMouseLeave={()=>setIsHovered('null')}>
+
 								<HiOutlineMail className="icon"/>
-								<p>Aminehlab</p>
-							</div>
-							<div className="contact__option app__flex">
-								<BsFillTelephoneFill className="icon"/>
-								<p>+212689542406</p>
-							</div>
+								<h5>Aminehlab</h5>
+								<p className="subtext">Text me <BsArrowRightShort className={`arrow ${isHovered === 'first' && 'arrow-left'}`}/></p>
+
+							</a>
+							<a href="https://api.whatsapp.com/send?phone=0689542406&text=Hello%20:D%20!" target="_blank"
+							   className={` decoration-none contact__option app__flex ${!isDarkMode && 'light-input'}`} 
+							   onMouseEnter={()=>setIsHovered('second')} 
+							   onMouseLeave={()=>setIsHovered('null')}>
+
+								<AiOutlineWhatsApp className="icon"/>
+								<h5>+212689542406</h5>
+								<p className="subtext">Text me <BsArrowRightShort className={`arrow ${isHovered === 'second' && 'arrow-left'}`}/></p>
+
+							</a>
 						</motion.div>
 						<motion.div
 							whileInView={{x:[-100, 0], opacity:[0,1]}}

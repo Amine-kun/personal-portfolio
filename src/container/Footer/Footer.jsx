@@ -5,6 +5,7 @@ import {FiGithub, FiLinkedin, FiInstagram} from 'react-icons/fi';
 const Footer = () => {
 	return (
 		<div id="footer" className="app__flex">
+		<span className="bar2"></span>
 			<FiGithub className="app__pointer bt"/>
 			<FiLinkedin className="app__pointer bt"/>
 			<FiInstagram className="app__pointer bt"/>
