@@ -38,15 +38,14 @@ const About = () => {
 					</div>
 
 					<p className="p-text about-text">	
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.
+						Hello There! My name is Amine. A guy ejoying <b className="blue-text">bringing creative designs</b> to life and whom he find pleasure in <b className="blue-text">solving problems</b>.<br /><br />
+						My interest in Web Dev started when i felt that something is missing, i needed to to bring my designs to reality, making them fully interactive.<br /><br />
+						One of my qualities that i can humbly flex, is that im <b className="blue-text">very Flexible</b>, and can easily learn to work with any new <b className="blue-text">technologies</b>.
 					</p>
 
-					<div className="links  about-text">
+					{/*<div className="links  about-text">
 						<button className="btn">More about me!</button>
-					</div>
+					</div>*/}
 				</motion.div>
 			</div>
 

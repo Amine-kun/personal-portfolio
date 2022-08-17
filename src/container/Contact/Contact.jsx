@@ -76,7 +76,9 @@ const Contact = ({isDarkMode}) => {
 
 								<HiOutlineMail className="icon"/>
 								<h5>Aminehlab</h5>
-								<p className="subtext">Text me <BsArrowRightShort className={`arrow ${isHovered === 'first' && 'arrow-left'}`}/></p>
+								<p className="subtext">Text me 
+									<BsArrowRightShort className={`arrow ${isHovered === 'first' && 'arrow-left'}`}/>
+								</p>
 
 							</a>
 							<a href="https://api.whatsapp.com/send?phone=0689542406&text=Hello%20:D%20!" target="_blank"
@@ -86,7 +88,9 @@ const Contact = ({isDarkMode}) => {
 
 								<AiOutlineWhatsApp className="icon"/>
 								<h5>+212689542406</h5>
-								<p className="subtext">Text me <BsArrowRightShort className={`arrow ${isHovered === 'second' && 'arrow-left'}`}/></p>
+								<p className="subtext">Text me 
+									<BsArrowRightShort className={`arrow ${isHovered === 'second' && 'arrow-left'}`}/>
+								</p>
 
 							</a>
 						</motion.div>

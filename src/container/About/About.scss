@@ -61,9 +61,10 @@
 			gap:15px;
 
 			.card{
-				background-color: var(--primary-color);
-				padding: 2rem;
-				border-radius: 0.7rem;
+			    backdrop-filter: saturate(180%) blur(20px);
+			    background-color: #48acf329;	
+    		    padding: 0.4rem 2rem;
+			    border-radius: 50px;
 			}
 		}
 		.about-text{
