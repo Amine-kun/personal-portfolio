@@ -68,9 +68,17 @@
 			}
 		}
 		.about-text{
+			font-size: 17px;
 			@media screen and (max-width: 800px){
 				padding: 0 25px;
 			}
+		}
+		.quote{
+			 backdrop-filter: saturate(180%) blur(20px);
+			 background-color: #48acf329; 
+			 padding: 2rem 3rem;
+			 border-radius: 1rem;
+			 font-style: italic;
 		}
 	}
 

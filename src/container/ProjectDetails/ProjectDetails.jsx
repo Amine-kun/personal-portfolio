@@ -20,7 +20,6 @@ const ProjectDetails = () => {
 			    client.fetch(query)
 
 			    .then((data) => {
-			    	console.log(data);
 			        setDetails(data);
 			      	client.fetch(`*[_type == "works"  && tags[0] == "${data[0].tags[0]}" ]`)
 			      		.then((data2)=>
@@ -39,7 +38,7 @@ const ProjectDetails = () => {
 				<h2>More Projects:</h2>
 				<div className="app__flex cards">
 
-					{more && more.map((card)=><Cardv2 card={card}/>)}
+					{more && more.map((card, index)=><Cardv2 card={card} key={index}/>)}
 
 				</div>
 				<span className="bar">

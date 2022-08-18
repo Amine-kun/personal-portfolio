@@ -46,6 +46,12 @@ const About = () => {
 					{/*<div className="links  about-text">
 						<button className="btn">More about me!</button>
 					</div>*/}
+					<div className="quote app__flex">
+						<p>
+							“ Success is all about having the ability to adabt and staying flexible to changes. ” <br/><br/>
+							- Some guy on the Internet
+						</p>
+					</div>
 				</motion.div>
 			</div>
 

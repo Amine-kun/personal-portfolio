@@ -1,8 +1,10 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import './Article.scss';
 import {urlFor} from '../../client';
 
 const Article = ({details}) => {
+	console.log(details);
+
 	return (
 		<>
 			<div className="details__header app__flex">
@@ -34,8 +36,15 @@ const Article = ({details}) => {
 
 				</div>
 				<div className="app__flex">
-					<button className="btn">Full project on Github</button>
-					<button className="btn-2">Live Demo</button>
+					{details[0].projectLink && details[0].codeLink 
+						?<>
+							<button className="btn">Full project on Github</button>
+						     <button className="btn-2">Live Demo</button>
+					     </>
+					 	:<>
+					 		<button className="btn-2">Back</button>
+					 	 </>}
+					
 				</div>	
 		</>
 	)
