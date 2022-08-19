@@ -26,11 +26,11 @@ const ProjectDetails = () => {
 			      	client.fetch(`*[_type == "works"  && tags[0] == "${data[0].tags[0]}" ]`)
 			      		.then((data2)=>{
 			      			let filtering = data2.filter((post)=> post.title !== id);
-			      			setMore(filtering)		      			
+			      			setMore(filtering)	
+			      			setSpinner(false);	      			
 			      				});
 				    });
-			    setSpinner(false);
-			  }, []);
+			  }, [id]);
 
 
 	return (

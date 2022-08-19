@@ -22,8 +22,9 @@ const Works = ({isDarkMode}) => {
 			    client.fetch(query).then((data) => {
 			      setWorks(data);
 			      setFilterWork(data);
+			      setSpinner(false);
+
 			    });
-			    	setSpinner(false);
 			  }, []);
 
 		  	const handleWorkFilter = (item) => {
