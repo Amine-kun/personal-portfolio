@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './Works.scss';
 import Card from '../../components/Card/Card';
+import Spinner from '../../components/Spinner/Spinner';
 
 import { client } from '../../client';
 import { motion } from 'framer-motion';
@@ -9,6 +10,7 @@ const tabs = ['All', 'Web App', 'Graphic Design', 'Digital Painting'];
 
 const Works = ({isDarkMode}) => {
 
+		  const [spinner, setSpinner] = useState(true);
 		  const [works, setWorks] = useState([]);
 		  const [filterWork, setFilterWork] = useState([]);
 		  const [activeFilter, setActiveFilter] = useState('All');
@@ -21,6 +23,7 @@ const Works = ({isDarkMode}) => {
 			      setWorks(data);
 			      setFilterWork(data);
 			    });
+			    	setSpinner(false);
 			  }, []);
 
 		  	const handleWorkFilter = (item) => {
@@ -66,7 +69,8 @@ const Works = ({isDarkMode}) => {
 					        transition={{ duration: 0.5, delayChildren: 0.5 }}
 					        className="app__work-portfolio"
 					      >
-					        {filterWork.map((work, index) => (
+					      	{spinner && <Spinner height={20}/>}
+					        {filterWork && !spinner && filterWork.map((work, index) => (
 					          	<Card key={index} work={work} isDarkMode={isDarkMode} index={index} />
 					        ))}
 					      </motion.div>

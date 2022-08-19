@@ -45,6 +45,7 @@
 
 .tags{
  	gap:10px;
+ 	flex-wrap: wrap;
 
  		.Atag{
 	 	    backdrop-filter: saturate(180%) blur(20px);

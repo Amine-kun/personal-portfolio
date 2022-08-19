@@ -1,0 +1,14 @@
+
+.spinner{
+	font-size: 2.5rem;
+	color: var(--primary-color);
+	animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -75,13 +75,15 @@ const Contact = ({isDarkMode}) => {
 							   onMouseLeave={()=>setIsHovered('null')}>
 
 								<HiOutlineMail className="icon"/>
-								<h5>Aminehlab</h5>
+								<h5>Aminehlab@gmail.com</h5>
 								<p className="subtext">Text me 
 									<BsArrowRightShort className={`arrow ${isHovered === 'first' && 'arrow-left'}`}/>
 								</p>
 
 							</a>
-							<a href="https://api.whatsapp.com/send?phone=0689542406&text=Hello%20:D%20!" target="_blank"
+							<a href="https://api.whatsapp.com/send?phone=0689542406&text=Hello%20:D%20!" 
+							   target="_blank"
+							   rel="noreferrer"
 							   className={` decoration-none contact__option app__flex ${!isDarkMode && 'light-input'}`} 
 							   onMouseEnter={()=>setIsHovered('second')} 
 							   onMouseLeave={()=>setIsHovered('null')}>

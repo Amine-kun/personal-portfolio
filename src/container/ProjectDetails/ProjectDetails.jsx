@@ -1,9 +1,10 @@
 import React,{useState, useEffect} from 'react';
 import './ProjectDetails.scss';
-import testimg from './test.jpg';
 
 import Article from '../../components/Article/Article';
 import Cardv2 from '../../components/Card__two/Cardn2';
+import Spinner from '../../components/Spinner/Spinner';
+
 
 import {useParams } from 'react-router-dom';
 import { client } from '../../client';
@@ -13,6 +14,7 @@ const ProjectDetails = () => {
 	const { id } = useParams();
 	const [details, setDetails] = useState();
 	const [more, setMore] = useState();
+	const [spinner, setSpinner] = useState(true);
 
 	useEffect(() => {
 			    const query = `*[_type == "works"  && title == "${id}" ]`;
@@ -27,12 +29,14 @@ const ProjectDetails = () => {
 			      			setMore(filtering)		      			
 			      				});
 				    });
+			    setSpinner(false);
 			  }, []);
 
 
 	return (
 		<>
-		{details && <div id="details" className="app__flex ">
+		{spinner && <Spinner height={100}/>}
+		{details && !spinner && <div id="details" className="app__flex ">
 			<div className="details__section app__flex">
 				<Article details={details}/>
 			</div>
