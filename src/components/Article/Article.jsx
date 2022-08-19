@@ -3,7 +3,6 @@ import './Article.scss';
 import {urlFor} from '../../client';
 
 const Article = ({details}) => {
-	console.log(details);
 
 	return (
 		<>
@@ -25,12 +24,7 @@ const Article = ({details}) => {
 						<span className="article app__flex">	
 							<img src={urlFor(details[0].studyCaseImg)} alt="details__img-sub" className="details__img-sub"/>
 							<h5>
-								This is wher the study case will be described 
-								basicaly it will discuss the project idea, the steps and the 
-								tech stack, This is wher the study case will be described 
-								basicaly it will discuss the project idea, the steps and the 
-								tech stack, This is wher the study case will be described 
-								basicaly 
+								{details[0].moreDetails} 
 							</h5>
 						</span>
 
