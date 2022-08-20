@@ -263,3 +263,25 @@
   color: var(--white-color-light);
 }
 
+.logo{
+  height: auto;
+  width: 100px;
+}
+.loading{
+  height: 100vh;
+  position:relative;
+}
+.upper{
+  position: absolute;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+.loader{
+  position: absolute;
+  height: 5px;
+  width: 100vw;
+  background-color: var(--primary-color);
+  top:0;
+  transition:2000ms;
+}
