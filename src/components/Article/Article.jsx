@@ -1,8 +1,11 @@
 import React,{useState, useEffect} from 'react';
 import './Article.scss';
+import {useNavigate} from 'react-router-dom';
 import {urlFor} from '../../client';
 
 const Article = ({details}) => {
+
+	const navigate = useNavigate();
 
 	return (
 		<>
@@ -22,7 +25,7 @@ const Article = ({details}) => {
 						{details[0].details}
 					</h5>
 						<span className="article app__flex">	
-							<img src={urlFor(details[0].studyCaseImg)} alt="details__img-sub" className="details__img-sub"/>
+							{details[0].studyCaseImg && <img src={urlFor(details[0].studyCaseImg)} alt="details__img-sub" className="details__img-sub"/>}
 							<h5>
 								{details[0].moreDetails} 
 							</h5>
@@ -30,14 +33,13 @@ const Article = ({details}) => {
 
 				</div>
 				<div className="app__flex">
-					{details[0].projectLink && details[0].codeLink 
-						?<>
-							<button className="btn">Full project on Github</button>
-						     <button className="btn-2">Live Demo</button>
-					     </>
-					 	:<>
-					 		<button className="btn-2">Back</button>
-					 	 </>}
+					
+							 {details[0].projectLink && details[0].codeLink &&
+							 	<>
+							 		<a href={details[0].codeLink}><button className="btn">Full project on Github</button></a>
+							 		<a href={details[0].projectLink}><button className="btn-2">Live Demo</button></a>
+							    </>}  
+					 		<button className="btn-2" onClick={()=>navigate('/')}>Back</button>
 					
 				</div>	
 		</>

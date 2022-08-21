@@ -4,6 +4,10 @@
 	justify-content:flex-start;
 	padding: 6rem;
 	flex-direction:column;
+
+	@media screen and (min-width: 1700px){
+		height: 100vh;
+	}
 }
 
 .head-title{
@@ -14,6 +18,7 @@
 	gap: 5px;
 }
 .aboutme__section{
+	 height: 100%;
  	 display: grid;
  	 grid-template-columns: 35% 50%;
  	 place-items:center;

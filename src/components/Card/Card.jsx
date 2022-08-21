@@ -55,7 +55,7 @@ const Card = ({work, isDarkMode, index}) => {
 				              </motion.div>
 				            </div>
 
-				            <div className="app__work-content app__flex">
+				            <div className="app__work-content app__flex" onClick={()=>navigate(`/Project/${work.title}`)}>
 				              <h4 className="">{work.title}</h4>
 				              <p className="" style={{ marginTop: 10 }}>{work.description}</p>
 

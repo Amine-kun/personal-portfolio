@@ -47,8 +47,6 @@ const ProjectDetails = () => {
 					{more && more.map((card, index)=><Cardv2 card={card} key={index}/>)}
 
 				</div>
-				<span className="bar">
-				</span>
 			</div>
 		</div>}
 		</>
