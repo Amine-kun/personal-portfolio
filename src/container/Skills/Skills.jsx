@@ -2,12 +2,12 @@ import React from 'react';
 import './Skills.scss';
 
 import {motion} from 'framer-motion';
-import {FaReact, FaNodeJs} from 'react-icons/fa';
-import {DiJavascript1, DiHtml5, DiMongodb} from 'react-icons/di';
+import {DiJavascript1, DiPython} from 'react-icons/di';
 import {BsPatchCheckFill} from 'react-icons/bs';
+import {SiTypescript} from 'react-icons/si';
 
-const frontEnd=["ReactJS","HTML5","CSS3","SCSS","Bootstrap","TailwindCSS"];
-const backEnd=["NodeJS","PostgreSQL","MongoDB","Firebase"];
+const frontEnd=["ReactJS","NextJS","jQuery","HTML5","CSS3","SCSS","Bootstrap","TailwindCSS"];
+const backEnd=["NodeJS","Django", "Flask","PostgreSQL","MongoDB","Firebase"];
 const design=["Photoshop","Illustrator","Canva","Figma"];
 
 const Skills = ({isDarkMode}) => {
@@ -24,11 +24,9 @@ const Skills = ({isDarkMode}) => {
 				whileInView={{y:[100, 0], opacity:[0,1]}}
 				transition={{duration:0.5}}
 				className={isDarkMode ? "exp__icons app__flex" : "exp__icons app__flex light-text"}>
-						<DiHtml5 className="stack-icons"/>
 						<DiJavascript1 className="stack-icons"/>
-						<FaReact className="stack-icons"/>
-						<FaNodeJs className="stack-icons"/>
-						<DiMongodb className="stack-icons"/>
+						<SiTypescript className="stack-icons"/>
+						<DiPython className="stack-icons"/>
 			</motion.div>
 			<motion.div
 				whileInView={{y:[100, 0], opacity:[0,1]}}

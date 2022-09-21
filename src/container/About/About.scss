@@ -47,8 +47,16 @@
 					&:hover{
 						transform:rotate(0deg);
 					}
+
+					@media screen and (max-width: 800px) {
+				    	transform:rotate(0deg);
+		  		}
 			}
 		
+				@media screen and (max-width: 800px) {
+			    	transform:rotate(9deg);
+					transition: 300ms;
+		  		}
 	}
 
 	.aboutme-info__section{
