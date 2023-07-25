@@ -4,6 +4,8 @@ import {motion} from 'framer-motion';
 
 import {FiGithub, FiLinkedin, FiInstagram} from 'react-icons/fi';
 
+const url = "https://download1478.mediafire.com/0bgxn8gjs1ggOQdgNb-CqOg-ESeHR_9Pu9Sx3s45g_TjH2g5VlOGkR4EamuBruu73x5B8KMsql4kAszcZk6zeavjMNAUbA9CCzrhNdM9qGYjniIhXYc3wmRsEHFnzQsj-bYEYs9muNsEqybmxRV7gwbW3F89hiXQSAKpjargrJwv/1ulm0a5exweams6/cv.pdf"
+
 const Header = () => {
 	return (
 		<div id="home" className="app__flex app__dim app__header">
@@ -14,7 +16,7 @@ const Header = () => {
 					<p className="lg-text">Hello, I'm</p>
 					<h1 className="head-text">AMINE BERROUKHAM</h1>
 					<p className="lg-text">Fullstack Developer  and  Web Designer</p>
-					<button className="btn">Download_Resume</button>
+					<a className="btn" href={url} download style={{textDecoration:'none'}}>Person.Download_Resume()</a>
 			</motion.div>
 			<motion.div
 					whileInView={{x:[-100, 0], opacity:[0,1]}}
@@ -42,15 +44,14 @@ const Header = () => {
 					whileInView={{y:[100, 0], opacity:[0,1]}}
 					transition={{duration:0.5}}
 					className="header__socials">
-				<FiGithub className="app__pointer social__icons"/>
-				<FiLinkedin className="app__pointer social__icons"/>
-				<FiInstagram className="app__pointer social__icons"/>
+				<FiGithub className="app__pointer social__icons" onClick={()=>window.open('https://github.com/Amine-kun')}/>
+				<FiInstagram className="app__pointer social__icons" onClick={()=>window.open('https://www.instagram.com/amine_berro/')}/>
 			</motion.div>
 			<motion.div 
 					whileInView={{y:[100, 0], opacity:[0,1]}}
 					transition={{duration:0.5}}
 					className="header__email">
-				<p>Aminehlab@gmail.com</p>
+				<p>contact@amineberroukham.me</p>
 			</motion.div>
 		</div>
 	)

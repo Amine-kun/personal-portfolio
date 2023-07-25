@@ -6,9 +6,8 @@ const Footer = () => {
 	return (
 		<div id="footer" className="app__flex">
 		<span className="bar2"></span>
-			<FiGithub className="app__pointer bt"/>
-			<FiLinkedin className="app__pointer bt"/>
-			<FiInstagram className="app__pointer bt"/>
+				<FiGithub className="app__pointer social__icons" onClick={()=>window.open('https://github.com/Amine-kun')}/>
+				<FiInstagram className="app__pointer social__icons" onClick={()=>window.open('https://www.instagram.com/amine_berro/')}/>
 		</div>
 	)
 }
