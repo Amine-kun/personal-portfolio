@@ -24,6 +24,7 @@ function App() {
     const [startLoading, setStartLoading] = useState(false);
    
         useEffect(() => {
+            window.scrollTo(0, 0)
             setTimeout(()=>{setIsLoading(false)},2000);
             setTimeout(()=>{setStartLoading(true)},600);
         }, [])

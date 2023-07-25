@@ -6,7 +6,7 @@ import Spinner from '../../components/Spinner/Spinner';
 import { client } from '../../client';
 import { motion } from 'framer-motion';
 
-const tabs = ['All', 'Web App', 'Graphic Design', 'Digital Painting'];
+const tabs = ['All', 'Web App', 'Digital Painting'];
 
 const Works = ({isDarkMode}) => {
 

@@ -17,6 +17,7 @@ const ProjectDetails = () => {
 	const [spinner, setSpinner] = useState(true);
 
 	useEffect(() => {
+
 			    const query = `*[_type == "works"  && title == "${id}" ]`;
 
 			    client.fetch(query)
@@ -27,7 +28,8 @@ const ProjectDetails = () => {
 			      		.then((data2)=>{
 			      			let filtering = data2.filter((post)=> post.title !== id);
 			      			setMore(filtering)	
-			      			setSpinner(false);	      			
+			      			setSpinner(false);
+			      			window.scrollTo(0, 0)		
 			      				});
 				    });
 			  }, [id]);

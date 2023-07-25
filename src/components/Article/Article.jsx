@@ -4,13 +4,13 @@ import {useNavigate} from 'react-router-dom';
 import {urlFor} from '../../client';
 
 const Article = ({details}) => {
-
+	
 	const navigate = useNavigate();
 
 	return (
 		<>
 			<div className="details__header app__flex">
-					<p>Webnesday, August 10, 2022</p>
+					<p>{details[0].date}</p>
 					<p className="head-text">{details[0].title}</p>
 						<div className="tags app__flex">
 							
@@ -34,11 +34,14 @@ const Article = ({details}) => {
 				</div>
 				<div className="app__flex">
 					
-							 {details[0].projectLink && details[0].codeLink &&
-							 	<>
-							 		<a href={details[0].codeLink}><button className="btn">Full project on Github</button></a>
-							 		<a href={details[0].projectLink}><button className="btn-2">Live Demo</button></a>
-							    </>}  
+							 {details[0].codeLink &&
+							 		<a href={details[0].codeLink}  target="_blank"><button className="btn">Full project on Github</button></a>
+							 		}  
+
+							 {details[0].projectLink && 
+								<a href={details[0].projectLink}  target="_blank"><button className="btn-2">Live Demo</button></a>
+									}
+
 					 		<button className="btn-2" onClick={()=>navigate('/')}>Back</button>
 					
 				</div>	
