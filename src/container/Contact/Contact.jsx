@@ -75,7 +75,7 @@ const Contact = ({isDarkMode}) => {
 							   onMouseLeave={()=>setIsHovered('null')}>
 
 								<HiOutlineMail className="icon"/>
-								<h5>Aminehlab@gmail.com</h5>
+								<h5>contact@amineberroukham.me</h5>
 								<p className="subtext">Text me 
 									<BsArrowRightShort className={`arrow ${isHovered === 'first' && 'arrow-left'}`}/>
 								</p>
@@ -89,7 +89,7 @@ const Contact = ({isDarkMode}) => {
 							   onMouseLeave={()=>setIsHovered('null')}>
 
 								<AiOutlineWhatsApp className="icon"/>
-								<h5>+212689542406</h5>
+								<h5>+212614757113</h5>
 								<p className="subtext">Text me 
 									<BsArrowRightShort className={`arrow ${isHovered === 'second' && 'arrow-left'}`}/>
 								</p>

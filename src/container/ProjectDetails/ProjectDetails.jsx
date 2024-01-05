@@ -46,7 +46,7 @@ const ProjectDetails = () => {
 				<h2>More Projects:</h2>
 				<div className="app__flex cards">
 
-					{more && more.map((card, index)=><Cardv2 card={card} key={index}/>)}
+					{more && more.map((card, index)=> index < 3 && <Cardv2 card={card} key={index}/> )}
 
 				</div>
 			</div>

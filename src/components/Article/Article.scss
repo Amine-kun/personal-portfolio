@@ -45,3 +45,44 @@
 .blue-text{
 	color: var(--primary-color);
 }
+.__more_details{
+	align-items:flex-start;
+}
+.cannot_clik_btn{
+	cursor: not-allowed;
+	border-color:grey;
+	color: grey;
+	position: relative;
+}
+.cannot_clik_btn:hover{
+	background-color: transparent !important;
+	color:grey;
+}
+.Github:hover:before{
+	content:'Github Link is not Public or not included';
+	background-color: white;
+	border:2px solid var(--primary-color);
+	height: auto;
+	color: var(--primary-color);
+	padding: 10px;
+	border-radius: 5px;
+	width:auto;
+	position:absolute;
+	top: -70px;
+	left:0
+}
+
+.demo:hover:before{
+	content:'No Demo link is available';
+	background-color: white;
+	border:2px solid var(--primary-color);
+	width: 200px;
+	height: auto;
+	color: var(--primary-color);
+	padding: 10px;
+	border-radius: 5px;
+	position:absolute;
+	top: -50px;
+	left:50%;
+	transform:translateX(-50%);
+}

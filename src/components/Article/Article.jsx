@@ -24,7 +24,7 @@ const Article = ({details}) => {
 					<h5>
 						{details[0].details}
 					</h5>
-						<span className="article app__flex">	
+						<span className="article app__flex __more_details">	
 							{details[0].studyCaseImg && <img src={urlFor(details[0].studyCaseImg)} alt="details__img-sub" className="details__img-sub"/>}
 							<h5>
 								{details[0].moreDetails} 
@@ -34,12 +34,14 @@ const Article = ({details}) => {
 				</div>
 				<div className="app__flex">
 					
-							 {details[0].codeLink &&
-							 		<a href={details[0].codeLink}  target="_blank"><button className="btn">Full project on Github</button></a>
+							 {details[0].codeLink !== 'none'
+							 	?	<a href={details[0].codeLink}  target="_blank"><button className="btn">Full project on Github</button></a>
+							 	: 	<button className="btn-2 cannot_clik_btn Github">Full project on Github</button>
 							 		}  
 
-							 {details[0].projectLink && 
-								<a href={details[0].projectLink}  target="_blank"><button className="btn-2">Live Demo</button></a>
+							 {details[0].projectLink !== 'none' 
+								?	<a href={details[0].projectLink}  target="_blank"><button className="btn-2">Live Demo</button></a>
+								: 	<button className="btn-2 cannot_clik_btn demo">Live Demo</button>
 									}
 
 					 		<button className="btn-2" onClick={()=>navigate('/')}>Back</button>
