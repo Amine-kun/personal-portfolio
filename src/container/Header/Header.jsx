@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 import {FiGithub, FiLinkedin, FiInstagram} from 'react-icons/fi';
 
-const url = "https://api.cloudinary.com/v1_1/dyogdwhc6/image/download?api_key=759733538962429&attachment=true&audit_context=eyJhY3Rvcl90eXBlIjoidXNlciIsImFjdG9yX2lkIjoiYjY2Y2ZkODk0OGZkMDIyMzU2N2NkNDA5YzZkMTU2ZDAiLCJ1c2VyX2V4dGVybmFsX2lkIjoiOWUyYTZmZGU4ZDNhYjY3ZTdkNzYwZjhlNjg3ZjNhIiwidXNlcl9jdXN0b21faWQiOiJhbWluZWhsYWJAZ21haWwuY29tIiwiY29tcG9uZW50IjoiY29uc29sZSJ9&public_id=cv-web-pdf_lj1w5c&signature=7c41fb6b42e3734deefde5524d13e5473d4b6116&source=ml&target_filename=cv-web-pdf_lj1w5c&timestamp=1704481463&type=upload"
+const url = "https://res.cloudinary.com/dyogdwhc6/image/upload//fl_attachment:Aminbe_berroukham_cv//v1704481315/Aminbe_berroukham_cv.pdf?_s=public-apps";
 
 const Header = () => {
 	return (
@@ -33,7 +33,7 @@ const Header = () => {
 									<p>2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;constructor() &#123;</p>
 									<p>3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = "Amine Berroukham";</p>
 									<p>4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.skills = ["Developer", "Designer"];</p>
-									<p>5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = 20;</p>
+									<p>5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.age = 21;</p>
 									<p>6 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#125;</p>
 									<p>7 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ...</p>
 									<p>8 &nbsp;&nbsp; &#125;</p>
