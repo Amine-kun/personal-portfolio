@@ -69,13 +69,13 @@ const Contact = ({isDarkMode}) => {
 							whileInView={{x:[-100, 0], opacity:[0,1]}}
 							transition={{duration:0.5}}
 							className="contact__options">
-							<a  href="mailto:Aminehlab@gmail.com"
+							<a  href="mailto:amineberroukham@outlook.com"
 							   className={` decoration-none contact__option app__flex ${!isDarkMode && 'light-input'}`} 
 							   onMouseEnter={()=>setIsHovered('first')} 
 							   onMouseLeave={()=>setIsHovered('null')}>
 
 								<HiOutlineMail className="icon"/>
-								<h5>contact@amineberroukham.me</h5>
+								<h5>amineberroukham@outlook.com</h5>
 								<p className="subtext">Text me 
 									<BsArrowRightShort className={`arrow ${isHovered === 'first' && 'arrow-left'}`}/>
 								</p>
