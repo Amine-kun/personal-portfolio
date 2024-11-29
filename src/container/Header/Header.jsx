@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 import {FiGithub, FiLinkedin, FiInstagram} from 'react-icons/fi';
 
-const url = "https://res.cloudinary.com/dyogdwhc6/image/upload//fl_attachment:Aminbe_berroukham_cv//v1704481315/Aminbe_berroukham_cv.pdf?_s=public-apps";
+const url = "https://t3.ftcdn.net/jpg/06/01/17/18/360_F_601171862_l7yZ0wujj8o2SowiKTUsfLEEx8KunYNd.jpg";
 
 const Header = () => {
 	return (
